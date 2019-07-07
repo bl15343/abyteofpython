@@ -1,0 +1,10 @@
+Python notes:
+======================
+
+While loops can have an else condition that is evaluated
+after the while conditional evaluates to false. This is true only if
+you do not exit the while loop with a break statement.
+
+For loops can have an else condition that is evalauted after
+the for loop finishes unless a break condition is encountered. The range operator is exclusive on the closing
+range. (1,5) 1,2,3,4
