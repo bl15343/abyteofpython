@@ -8,3 +8,56 @@ you do not exit the while loop with a break statement.
 For loops can have an else condition that is evalauted after
 the for loop finishes unless a break condition is encountered. The range operator is exclusive on the closing
 range. (1,5) 1,2,3,4
+
+If providing default values for function parameters, you have two choices,
+all of the parameters have to have defaults, or just the last one.
+This is due to the values being assigned by position. You get around this limitation
+by specifying the values to each parameter; similar to perl with accepting a hash
+of arguments
+
+With a function parameter list, *list collects all the positional arguments from that point to the end are collected as a tuple.
+
+**dict captures all keyword arguments from that point til the end and captures them as a dictionary
+
+The 'pass' keyword is similar to the '. . .' operator in perl in that it indicates
+an empty block.
+
+You can get the comments of a function by doing func_name.__doc__
+
+The convention for doc strings is that the first line starts with a capital letter
+and ends with a dot. Then there is a second line that is blank, then it's followed
+by a detailed explanation on the third line.
+
+Avoid the from .. import paradigm to avoid naming clashes
+
+List is mutable
+Strings are immutable.
+Tuples hold mutable objects, but tuples themselves are immutable.
+
+A within a list is not flattened like in perl. Identity is retained.
+
+For dictionaries, immutable objects only for keys (strings, etc). They are not
+ordered, just like Perl hash.
+
+You can iterate over both key/value pair by doing
+
+for key,value in dict.items():
+    pass
+
+To test for existence in python, you can do:
+
+if 'Value' in dict:
+    pass
+
+Single item tuple requires trailing comma in definition
+
+ab = (2,)
+
+lists, strings, tuples are sequences that have slice operators, subscription indexing
+
+python has an unordered set datastructure
+
+python uses references for complex objects and sequences, so if I want to copy
+them to a new variable, I have to explicitly copy.
+
+string class is powerful. join is very different than perl. You define the delimiter, and then join the list on that.
