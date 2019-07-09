@@ -6,9 +6,7 @@ def get_path(dir_entry):
     return dir_entry.path
 
 def build_zip_cmd(files, archive):
-    cmd = [ "zip" ]
-
-    cmd.append(archive)
+    cmd = [ "zip", archive ]
 
     for file in list(files):
         cmd.append(file)
