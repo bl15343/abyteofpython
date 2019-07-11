@@ -61,3 +61,15 @@ python uses references for complex objects and sequences, so if I want to copy
 them to a new variable, I have to explicitly copy.
 
 string class is powerful. join is very different than perl. You define the delimiter, and then join the list on that.
+
+In python classes __init__ function is analagous to constructor/BUILD in Moose
+
+object variables override (global) class variables of the same name
+
+naming convention is that if it is to be private, then the variable should start with an underscore. All class members are public, just like perl
+
+with inheritance, in the init method, you have to explicitly call __init__ of the base class. It is called automatically if no __init__ method has been defined in the sub class.
+
+Python looks for class methods first, then bubbles up inheritance interface.
+
+Multiple inheritance is possible as well.
