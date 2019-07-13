@@ -73,3 +73,8 @@ with inheritance, in the init method, you have to explicitly call __init__ of th
 Python looks for class methods first, then bubbles up inheritance interface.
 
 Multiple inheritance is possible as well.
+
+Exceptions:
+    try..except..else for base case
+
+    Except can handle a specific exception, a list, or All exceptions (defined by not listing any specific type of exception)
