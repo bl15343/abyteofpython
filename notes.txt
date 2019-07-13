@@ -78,3 +78,5 @@ Exceptions:
     try..except..else for base case
 
     Except can handle a specific exception, a list, or All exceptions (defined by not listing any specific type of exception)
+
+Opening and reading files using "with open()" automatically handles file handle closing even when encountering exceptions. Seems to be best practice to use this idiom.
